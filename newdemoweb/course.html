@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Course Website</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="http://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+</head>
+<body>
+    <section class="subheader">
+            <nav>
+                <a href="index.html"><img src="images/logo.png"></a>
+                <div class= "nav-links" id='navLinks'>
+                    <i class="fa fa-times" onclick="hideMenu()"></i>
+
+                    <ul >
+                        <li><a href="">HOME</a></li>
+                        <li><a href="">ABOUT</a></li>
+                        <li><a href="">COURSE</a></li>
+                        <li><a href="">BLOG</a></li>
+                        <li><a href="">CONTACT</a></li>
+                    </ul>
+                </div>
+                <i class="fa fa-bars" onclick='showMenu()'></i>
+
+            </nav>
+            <h1>Our Courses</h1>
+    </section>
+
+    <!---Course-->
+    <section class="course">
+        <h1>Courses We Offer</h1>
+        <p>
+            Lorem ipsum dolor,  animi natus fugit asperiores!
+        </p>
+
+        <div class="row">
+            <div class="course-col">
+                <h3>Intermediate</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                     Nemo rem quaerat eius voluptates? Nesciunt blanditiis nam 
+                     sit. Illo rem corrupti ut vero fugit beatae quo nihil 
+                     qui! Ex, nostrum necessitatibus.
+                </p>
+            </div>
+            <div class="course-col">
+                <h3>Degree</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                     Nemo rem quaerat eius voluptates? Nesciunt blanditiis nam 
+                     sit. Illo rem corrupti ut vero fugit beatae quo nihil 
+                     qui! Ex, nostrum necessitatibus.
+                </p>
+            </div>
+            <div class="course-col">
+                <h3>PostGraduation</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                     Nemo rem quaerat eius voluptates? Nesciunt blanditiis nam 
+                     sit. Illo rem corrupti ut vero fugit beatae quo nihil 
+                     qui! Ex, nostrum necessitatibus.
+                </p>
+            </div>
+        </div>
+
+
+    </section>
+
+    <!---Facilities-->
+
+    <section class="facilities">
+        <h1>Our Facilities</h1>
+        <p>Lorem ipsu adipisicing elit. Dolore hic nobis incidunt face</p>
+        <div class="row">
+            <div class="facilities-col">
+                <img src="images/library.png">
+                <h3>World Class Library</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Persp</p>
+
+            </div>
+            <div class="facilities-col">
+                <img src="images/basketball.png">
+                <h3>Largest Play Ground</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Persp</p>
+
+            </div>
+            <div class="facilities-col">
+                <img src="images/cafeteria.png">
+                <h3>Tasty and Healthy Food</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Persp</p>
+
+            </div>
+        </div>
+    </section>
+
+
+
+    
+    
+
+    
+    
+    <!---Footer-->
+
+    <section class="footer">
+        <h4>About Us</h4>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quo, error
+            . Provident ducimus tenetur voluptates, quis optio quibusdam magnam
+             dolore dolores deserunt, quae voluptatem voluptatum maiores fugit 
+             harum pariatur, eaque architecto.
+        </p>
+    </section>
+
+
+    <script>
+        var  navLinks = document.getElementById("navLinks");
+
+        function showMenu(){
+            navLinks.style.right ="0";
+        }
+        function hideMenu(){
+            navLinks.style.right ="-200px";
+        }
+    </script>
+</body>
+</html>
