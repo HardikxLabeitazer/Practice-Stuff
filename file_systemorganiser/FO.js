@@ -4,8 +4,12 @@
 //console.log(input)
 const fs = require("fs");
 const path = require("path");
+const { dirname } = require("path/posix");
 let inputArr = process.argv.slice(2);
 let command = inputArr[0];
+const help = require('./commands/help');
+const organize = require('./commands/organize');
+const tree = require('./commands/tree');
 
 let types={
     media:['mp4','mkv','mp3'],
@@ -19,12 +23,13 @@ switch(command){
 
     case 'tree':
         console.log("Tree implemented");
+        treeFn(inputArr[1]);
         break;
     case 'organize':
-        organizeFn(inputArr[1]);
+        organize.oragnizemethod(inputArr[1]);
         break;
     case 'help':
-        console.log("Help Implemented");
+        help.helpKey;
         break;
 
     default:
@@ -120,4 +125,44 @@ function sendFiles(srcFilePath,dest,filecategory){
     fs.unlink(srcFilePath);
     console.log(filename + " is copied to "+filecategory );
     
+}
+
+
+function treeFn(dirpath){
+    let destpath;
+
+    if(dirpath==undefined){
+        console.log("Please Enter a Valid dictionary path");
+        return ;
+    }
+
+    else{
+        let doesExist = fs.existsSync(dirpath);
+        if(doesExist==true){
+            treeHelper(dirpath ," ");
+        }
+    }
+}
+
+function treeHelper(targetPath,indent){
+  let isFile = fs.lstatSync(targetPath).isFile();
+  if(isFile==true){
+      let fileName = path.basename(targetPath);
+      console.log(indent + '|----' + fileName);
+  }
+  else{
+       let dirName = path.basename(targetPath);
+       console.log(indent + "|---" + dirName);
+
+
+       let children = fs.readdirSync(targetPath);
+       //console.log(children);
+
+
+       for(let i = 0;i<children.length ;i++){
+           let childpath = path.join(targetPath,children[i]);
+           console.log(childpath);
+           treeHelper(childpath,indent + '\t');
+       }
+  }
 }
