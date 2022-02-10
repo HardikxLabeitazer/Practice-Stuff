@@ -32,16 +32,19 @@ fs.writeFileSync("example.json", stringData);
 
 console.log("JSON file updated");
 
-
+function excelWriter(filename,sheetname,jsondata){
 let newWB  = xlsx.utils.book_new();
 //Creating a new workbook
-let newWS = xlsx.utils.json_to_sheet(data);
+let newWS = xlsx.utils.json_to_sheet(jsondata);
 //Json is converted to sheet format(rows and cols)
-xlsx.utils.book_append_sheet(newWB,newWS,'Avengers');
-xlsx.writeFile(newWB,'abc.xlsx');
+xlsx.utils.book_append_sheet(newWB,newWS,sheetname);
+xlsx.writeFile(newWB,filename);
+}
 
 
-let wb = xlsx.readFile('abc.xlsx');
-let excelData = wb.Sheets['Avengers'];
+function excelreader(filename,sheetname){
+let wb = xlsx.readFile(filename);
+let excelData = wb.Sheets[sheetname];
 let ans = xlsx.utils.sheet_to_json(excelData);
 console.log(ans);
+}
