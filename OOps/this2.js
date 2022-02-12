@@ -8,7 +8,7 @@
 // }
 
 
-// obj =
+// let obj =
 //     {
 //         name:"hardik",
     
@@ -25,7 +25,7 @@
 // obj.f();
 
 
-obj =
+let obj =
     {
         name:"hardik",
     

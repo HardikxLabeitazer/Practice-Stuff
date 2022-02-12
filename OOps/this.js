@@ -5,7 +5,7 @@ function test(){
 }
 
 
-// obj =
+//let obj =
 //     {
 //         name:"hardik",
     
@@ -22,7 +22,7 @@ function test(){
 // obj.f();
 
 
-obj =
+let obj =
     {
         name:"hardik",
     
