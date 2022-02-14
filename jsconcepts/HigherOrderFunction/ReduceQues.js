@@ -11,7 +11,7 @@ let ans = transactions.filter(function(transactions){
 console.log(ans);
 
 
-const transactions = [1000,3000,4000,2000,-898,3800,-4500];
+const transactions = [1000,3000,4000,2000,-898,3800,-4500,550];
 
 let ans2 = transactions.filter(function(transactions){                  ////REDUCE RIGHT REVERSES THE ORDER OF ITERATION
     return transactions>0;
