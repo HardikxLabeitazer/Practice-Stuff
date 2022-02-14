@@ -5,11 +5,11 @@ const products =[
     {name:"Monitor",price:200}
 ];
 
-// let ans = products.map(function(products){
-//     return products.price;
-// }).filter(function(price){
-//     return price>=100;
-// })
+let ans = products.map(function(products){
+    return products.price;
+}).filter(function(price){
+    return price>=100;
+})
 
 
 console.log(ans);
