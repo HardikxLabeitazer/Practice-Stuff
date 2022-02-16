@@ -43,7 +43,7 @@ public class Main{
             }
         }
 
-        for(int i = maxStpt;i<maxStpt + maxlen ;i++){
+        for(int i  = maxStpt;i<maxStpt + maxlen ;i++){
             System.out.println(i);
         }
     }
