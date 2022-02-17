@@ -1,6 +1,6 @@
 let fs = require("fs");
 
-console.log('Before1');
+console.log('Before');
 
 
 let f1p = fs.promises.readFile("f1.txt");
@@ -27,4 +27,4 @@ function cb3(data){
 
 f1p.then(cb).then(cb2).then(cb3);
 
-console.log("After1");
+console.log("After");
