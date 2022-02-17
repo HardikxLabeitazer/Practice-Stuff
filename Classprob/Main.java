@@ -36,14 +36,14 @@ public class Main{
                 while(hm.containsKey(tempStpt + templen)){
                     templen++;
                 }
-                if(templen >maxlen){
+                if (templen >maxlen){
                     maxlen = templen;
                     maxStpt = tempStpt;
                 }
             }
         }
 
-        for(int i = maxStpt;i<maxStpt + maxlen ;i++){
+        for(int i  = maxStpt;i< maxStpt + maxlen ;i++){
             System.out.println(i);
         }
     }
