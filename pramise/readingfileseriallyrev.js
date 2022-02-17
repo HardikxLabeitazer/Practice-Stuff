@@ -27,4 +27,4 @@ function cb3(data){
 
 f1p.then(cb).then(cb2).then(cb3);
 
-console.log("After");
+console.log("After1   ");
