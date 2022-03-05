@@ -1,0 +1,15 @@
+{
+  "dependencies": {
+    "inquirer": "^8.2.0"
+  },
+  "name": "miniprojpromise",
+  "version": "1.0.0",
+  "main": "Demo.js",
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}
