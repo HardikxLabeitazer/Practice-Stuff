@@ -20,6 +20,6 @@ inquirer.prompt([
         console.log("This is Academics Section");
     }
     else if(ans.selection=="Projects"){
-        cp.execSync("start chrome https://github.com/HardikxLabeitazer")
+        cp.execSync("start chrome https://github.com/HardikxLabeitazer ")
     }
 });
